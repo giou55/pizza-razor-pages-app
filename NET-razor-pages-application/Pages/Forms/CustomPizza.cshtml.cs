@@ -13,7 +13,7 @@ namespace NET_razor_pages_application.Pages.Forms
         {
         }
 
-        public IActionResult onPost()
+        public IActionResult OnPost()
         {
             PizzaPrice = Pizza.BasePrice;
 
@@ -27,7 +27,7 @@ namespace NET_razor_pages_application.Pages.Forms
             if (Pizza.Beef) PizzaPrice += 1;
 
             return RedirectToPage(
-                "/Chechout/Checkout", 
+                "/Checkout/Checkout",
                 new { Pizza.PizzaName, PizzaPrice }
             );
         }
