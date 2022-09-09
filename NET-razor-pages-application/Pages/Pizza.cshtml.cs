@@ -9,8 +9,8 @@ namespace NET_razor_pages_application.Pages
         public List<PizzasModel> fakePizzaDB = new List<PizzasModel>()
         {
             new PizzasModel(){
-                ImageTitle="Magerita", 
-                PizzaName="Magerita",
+                ImageTitle="Margerita", 
+                PizzaName="Margerita",
                 BasePrice=2,
                 TomatoSauce=true,
                 Cheese=true,
@@ -41,8 +41,8 @@ namespace NET_razor_pages_application.Pages
                 FinalPrice=7
             },
             new PizzasModel(){
-                ImageTitle="Vegeterian",
-                PizzaName="Vegeterian",
+                ImageTitle="Vegetarian",
+                PizzaName="Vegetarian",
                 BasePrice=2,
                 TomatoSauce=true,
                 Pineapple=true,
