@@ -31,10 +31,12 @@ namespace NET_razor_pages_application.Pages.Checkout
             }
 
             PizzaOrder pizzaOrder = new PizzaOrder();
+            // pizzaOrder.id will be created automatically
             pizzaOrder.PizzaName = PizzaName;
             pizzaOrder.BasePrice = PizzaPrice; 
 
-            _context.PizzaOrders.Add(pizzaOrder);   
+            _context.PizzaOrders.Add(pizzaOrder);
+            // after we modify the database always must call SaveChanges()
             _context.SaveChanges();
         }
     }
