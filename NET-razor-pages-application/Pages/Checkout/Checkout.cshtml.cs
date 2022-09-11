@@ -12,6 +12,7 @@ namespace NET_razor_pages_application.Pages.Checkout
         public string ImageTitle { get; set; }
         public void OnGet()
         {
+            // PizzaName and ImageTitle is taken from URL parameters
             if (string.IsNullOrWhiteSpace(PizzaName))
             {
                 PizzaName = "Custom";

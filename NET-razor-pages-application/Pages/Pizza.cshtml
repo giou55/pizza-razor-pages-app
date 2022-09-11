@@ -38,8 +38,17 @@
 
                 <div class="col-3 mb-5">
                     <img src="@imagePath" class="w-100" asp-append-version="true" />
-                    <a class="btn btn-primary mt-1" asp-area="" asp-page="Checkout/Checkout">
-                        Get this Pizza
+                    <!-- 
+                        This is the URL that will be created:
+                        localhost/Checkout/Checkout?PizzaName=Vegetarian&ImageTitle=Vegetarian&PizzaPrice=10
+                    -->
+                    <a class="btn btn-primary mt-1" 
+                        asp-area="" 
+                        asp-page="Checkout/Checkout"
+                        asp-route-PizzaName="@pizza.PizzaName"
+                        asp-route-ImageTitle="@pizza.ImageTitle"
+                        asp-route-PizzaPrice="@pizza.FinalPrice">
+                            Get this Pizza
                     </a>
                     <br />
                 </div>
